@@ -1,4 +1,4 @@
 name: DeathBag
-main: me.bukkit.deathbag.Inkzzz.Main
-version: 1.0
-author: [ Inkzzz ]
+main: me.bukkit.deathbag.inkzzz.Main
+version: 1.0.0
+authors: [Inkzzz, Omnivion]

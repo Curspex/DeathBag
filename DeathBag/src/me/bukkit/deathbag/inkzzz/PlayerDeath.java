@@ -1,4 +1,4 @@
-package me.bukkit.deathbag.Inkzzz;
+package me.bukkit.deathbag.inkzzz;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
