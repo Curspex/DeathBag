@@ -1,4 +1,4 @@
-package me.bukkit.deathbag.inkzzz;
+package me.inkzzz.bukkit.deathbag.listener;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -10,10 +10,11 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
-public class PlayerDeath implements Listener {
+public class PlayerDeathListener implements Listener {
 
 	@EventHandler(priority = EventPriority.HIGH)
-	public void onPlayerDeath(final PlayerDeathEvent event) {
+	public void onPlayerDeath(final PlayerDeathEvent event)
+	{
 		if (event.getKeepInventory() == true || !event.getEntityType().equals(EntityType.PLAYER) || event.getDrops().size() < 1) return;
 		final Location location = event.getEntity().getLocation();
 		location.getBlock().setType(Material.CHEST);
